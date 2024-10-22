@@ -10,6 +10,7 @@ public class DevopsTestApplication {
 		SpringApplication.run(DevopsTestApplication.class, args);
 		System.out.println("SERVER START....");
 		System.out.println("SERVER START....2");
+		System.out.println("SERVER START....3");
 	}
 
 }

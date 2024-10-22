@@ -9,6 +9,7 @@ public class DevopsTestApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DevopsTestApplication.class, args);
 		System.out.println("SERVER START....");
+		System.out.println("SERVER START....2");
 	}
 
 }

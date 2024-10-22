@@ -107,7 +107,7 @@ jobs:
           script: |
             sudo docker stop devops-test
             sudo docker rm devops-test
-            sudo docker run -it -d -p 8081:8080 --name boot-prac-ci zoown12/devops-test
+            sudo docker run -it -d -p 8081:8080 --name devops-test zoown12/devops-test
 
       # REMOVE Github IP FROM security group (9)
       - name: Remove IP FROM security group

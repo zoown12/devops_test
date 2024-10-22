@@ -2,9 +2,9 @@ name: Java CI with Gradle
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "main" ]
 
 jobs:
   deploy: 
@@ -20,7 +20,7 @@ jobs:
     
     # Docker 이미지 Build (2)
     - name: docker image build
-      run: docker build -t lucaskang134/boot-prac-ci:latest .
+      run: docker build -t zoown12/devops-test:latest .
     
     # DockerHub Login (3)
     - name: docker login 
@@ -31,4 +31,4 @@ jobs:
 
     # Docker Hub push (4)
     - name: docker Hub push
-      run: docker push lucaskang134/boot-prac-ci:latest
+      run: docker push zoown12/devops-test:latest
